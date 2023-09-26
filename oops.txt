@@ -1,0 +1,37 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isPalindrome(int digit)
+{
+    int Y = 0;
+    int num = digit ;
+    while (num != 0)
+    {
+        int X = num % 10;
+        Y = Y * 10 + X;
+        num = num / 10;
+    }
+    if(digit == Y){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+
+int main()
+{
+    int min = 10 ;
+    int max = 50;
+    for (int i = min; i <= max; i++)
+    {
+        if(isPalindrome(i)){
+            cout<<i<<" ";
+        }
+    }
+    
+
+    return 0;
+}
