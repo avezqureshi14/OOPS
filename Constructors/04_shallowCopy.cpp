@@ -14,6 +14,7 @@ public:
 };
 int main()
 {
+    cout<<"Example of Shallow Copy "<<endl<<endl;
     SCopy s1(10);
     SCopy s2(s1);
 
@@ -22,7 +23,7 @@ int main()
     cout << *s1.data << endl;
     cout << "Copied Constructor ";
     cout << *s2.data << endl;
-    
+
     *s1.data = 1;
 
     cout << endl;
