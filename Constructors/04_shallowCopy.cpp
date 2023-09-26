@@ -14,21 +14,28 @@ public:
 };
 int main()
 {
-    SCopy sd1(10);
+    SCopy s1(10);
+    SCopy s2(s1);
+
     cout << "Previous" << endl;
     cout << "We have maually assigned the values ";
-    cout << *sd1.data << endl;
-    SCopy sd2(sd1);
+    cout << *s1.data << endl;
     cout << "Copied Constructor ";
-    cout << *sd2.data << endl;
-    *sd1.data = 1;
+    cout << *s2.data << endl;
+    
+    *s1.data = 1;
+
     cout << endl;
     cout << endl;
+
     cout << "New" << endl;
     cout << "We have maually assigned the values ";
-    cout << *sd1.data << endl;
+    cout << *s1.data << endl;
     cout << "Copied Constructor ";
-    cout << *sd2.data << endl;
+    cout << *s2.data << endl;
 
     return 0;
 }
+
+//important point to remember
+// In order to clearly see the effects of shallow copy, you need to use pointers or references in your class. When you work with value types (non-pointer, non-reference types), the default copy behavior provided by the compiler performs a deep copy, which means each object gets its own copy of the data, and changes in one object do not affect the other.
