@@ -42,7 +42,8 @@ Welcome to the Object-Oriented Programming (OOP) Notes repository! This reposito
 ## Usage
 - Clone the repository to your local machine using the following command:
     ```
-    git clone https://github.com/your_username/OOP-Notes.git
+    [git clone https://github.com/avezqureshi14/OOP-Notes.git](https://github.com/avezqureshi14/OOPS.git)
+    
     ```
 - Navigate to the respective folder for the topic you want to study.
 - Open the notes file (.md, .pdf, or any other format available) using your preferred text editor or PDF viewer.
